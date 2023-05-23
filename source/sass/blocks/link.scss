@@ -1,0 +1,18 @@
+.link {
+  background-color: $accent;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  // line-height: 40px;
+  // font-size: 16px;
+
+  &:hover {
+    background-color: $accent--darken;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}

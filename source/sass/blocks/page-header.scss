@@ -1,0 +1,15 @@
+.page-header {
+  background-color: $white;
+  position: relative;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-top: 31px;
+  }
+}

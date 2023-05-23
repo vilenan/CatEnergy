@@ -1,0 +1,475 @@
+.form__text {
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 61px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.form__section {
+  @include reset;
+  border: none;
+  margin-bottom: 22px;
+  position: relative;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.form__section--goal {
+  border-top: 1px solid $grey--light;
+  border-bottom: 1px solid $grey--light;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
+}
+
+.form__section--contacts {
+  margin-bottom: 26px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 60px;
+  }
+}
+
+
+.form__section--comments {
+  margin-bottom: 20px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+
+.form__section--extra {
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.form__section--contacts::before {
+  content: "";
+  height: 2px;
+  background-color: $accent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: -38px;
+
+  @media (min-width: $table-width) {
+    top: -13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -18px;
+  }
+}
+
+.form__section--comments::before,
+.form__section--extra::before {
+  content: "";
+  height: 2px;
+  background-color: $accent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: -13px;
+
+  @media (min-width: $desktop-width) {
+    top: -18px;
+  }
+}
+
+.form__section-wrapper--user,
+.form__section-wrapper--contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__section-wrapper--user {
+  margin-bottom: 24px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.form__section-wrapper--goal {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $table-width) {
+    border: 1px solid $grey--light;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+  }
+}
+
+.form__section-wrapper--contacts {
+  margin-top: 34px;
+
+  @media (min-width: $table-width) {
+    margin-top: 76px;
+  }
+}
+
+.form__section-wrapper--extra {
+  display: grid;
+  margin-top: 34px;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    margin-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  margin-left: -20px;
+  background-color: white;
+  display: inline-block;
+
+  @media (min-width: $table-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.form__legend br {
+  @media (min-width: $table-width) {
+    display: none;
+  }
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__item:last-child {
+  margin-bottom: 0;
+}
+
+.form__item--goal {
+  @media (min-width: $table-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__item--extra {
+  @media (min-width: $table-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__item--extra:last-child {
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__item--contacts,
+.form__item--extra {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__item--contacts {
+  position: relative;
+}
+
+.form__input-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey--darken;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--radio {
+    color: $grey--darkest;
+    padding-left: 45px;
+    position: relative;
+
+    @media (min-width: $table-width) {
+      padding-left: 60px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $grey;
+      left: 0;
+      top: 0;
+
+      @media (min-width: $table-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &--checkbox {
+    color: $grey--darkest;
+    padding-left: 45px;
+    position: relative;
+
+    @media (min-width: $table-width) {
+      padding-left: 60px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $grey;
+      left: 0;
+      top: 0;
+
+      @media (min-width: $table-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.form__input-text {
+  padding: 13px 15px;
+  border: 1px solid $grey--light;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey--darken;
+  flex-grow: 1;
+  margin-left: 13px;
+  box-sizing: border-box;
+
+  @media (min-width: $table-width) {
+    padding: 11px 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid $grey;
+  }
+
+  &:focus {
+    border: 1px solid $grey--darken;
+    box-shadow: 0 0 0 1px $grey--darken;
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid $error;
+    box-shadow: 0 0 0 1px $error;
+  }
+
+  &:focus + .form__input-image--email {
+    stroke: $accent;
+  }
+
+  &:focus + .form__input-image--phone {
+    fill: $accent;
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid + .form__input-image--email {
+    stroke: $error;
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid + .form__input-image--phone {
+    fill: $error;
+  }
+
+  &--textarea {
+    @include reset;
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    min-height: 150px;
+    margin-top: 34px;
+
+    @media (min-width: $table-width) {
+      min-height: 174px;
+      margin-top: 76px;
+    }
+  }
+}
+
+.form__input-radio {
+  &:hover + .form__input-label--radio::before {
+    border: 1px solid $grey-dark;
+  }
+
+  &:checked + .form__input-label--radio::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $accent;
+    left: 9px;
+    top: 9px;
+
+    @media (min-width: $table-width) {
+      width: 18px;
+      height: 18px;
+      left: 12px;
+      top: 12px;
+    }
+  }
+
+  &:disabled + .form__input-label--radio {
+    opacity: 0.3;
+  }
+}
+
+.form__input-checkbox {
+  &:hover + .form__input-label--checkbox::before {
+    border: 1px solid $grey-dark;
+  }
+
+  &:checked + .form__input-label--checkbox::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    background-image: url("../image/checkbox_checked.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 8px;
+    top: 8px;
+
+    @media (min-width: $table-width) {
+      left: 13px;
+      top: 13px;
+    }
+  }
+
+  &:disabled + .form__input-label--checkbox::after {
+    opacity: 0.3;
+  }
+
+  &:disabled + .form__input-label--checkbox {
+    opacity: 0.3;
+  }
+}
+
+.form__input-image {
+  position: absolute;
+  right: 20px;
+}
+
+.form__input-image--email {
+  stroke: $grey--darkest;
+}
+
+.form__input-image--phone {
+  fill: $grey--darkest;
+}
+
+.form__button {
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  width: 100%;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+.form__footnote {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+  margin: 0;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 32px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}

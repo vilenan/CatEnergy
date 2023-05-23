@@ -1,0 +1,34 @@
+.main-catalog {
+  margin-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 74px;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.main-catalog__wrapper {
+  @include reset;
+
+  @media (min-width: $table-width) {
+    width: auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 80px;
+  }
+}

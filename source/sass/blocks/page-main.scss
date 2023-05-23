@@ -1,0 +1,26 @@
+// .page-main--form {
+//   @media (min-width: $table-width)and(max-width: 1439px) {
+//     padding-left: 70px;
+//     padding-right: 70px;
+//   }
+// }
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: $black;
+  margin-top: 27px;
+  margin-bottom: 40px;
+
+  @media (min-width: $table-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
+}

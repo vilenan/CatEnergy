@@ -1,0 +1,174 @@
+.program {
+  background-color: $grey--lighten;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $table-width) {
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 35px;
+    padding-right: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+    padding-left: 53px;
+    padding-bottom: 53px;
+  }
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  padding-left: 71px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    padding-left: 0;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    padding-left: 162px;
+    margin-bottom: 73px;
+    margin-top: 36px;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.program--slim .program__title::before {
+  width: 50px;
+  height: 53px;
+  left: 0;
+  background-image: url("../image/icon_program_1.svg");
+  background-size: contain;
+
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    width: 200px;
+    height: 211px;
+    left: calc(100% - 200px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: 0;
+  }
+}
+
+.program--pro .program__title::before {
+  width: 67px;
+  height: 53px;
+  left: -7px;
+  background-image: url("../image/icon_program_2.svg");
+  background-size: contain;
+
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    width: 268px;
+    height: 200px;
+    left: calc(100% - 238px);
+    top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: -20px;
+  }
+}
+
+
+.program__image {
+  justify-self: center;
+}
+
+.program__description {
+  font-family: "Arial", sans-serif;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $table-width) {
+    border: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    padding-bottom: 33px;
+  }
+}
+
+.program--slim .program__description {
+  @media (min-width: $table-width) {
+    width: calc(100% - 200px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.program--pro .program__description {
+  @media (min-width: $table-width) {
+    width: calc(100% - 255px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.program__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black;
+  padding: 19px 0 21px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../image/icon-arrow-small.svg");
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../image/icon_arrow_big.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

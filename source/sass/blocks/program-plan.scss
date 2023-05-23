@@ -1,0 +1,132 @@
+.program-plan {
+  margin-bottom: 42px;
+  margin-top: 20px;
+
+  @media (min-width: $table-width) {
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+}
+
+.program-plan__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  margin-bottom: 37px;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.program-plan__list {
+  @include reset;
+  counter-reset: item;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.program-plan__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-color: $accent;
+    background-position: center;
+
+    @media (min-width: $table-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: $table-width) {
+    min-height: 230px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 70px;
+
+    &::after {
+      content: counter(item);
+      counter-increment: item;
+      position: absolute;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $grey--lighten;
+      z-index: -1;
+      top: -40px;
+      right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.program-plan__item--healthy-components::before {
+  background-image: url("../image/icon_program_plan_1.svg");
+}
+
+.program-plan__item--powder::before {
+  background-image: url("../image/icon_program_plan_2.svg");
+}
+
+.program-plan__item--include::before {
+  background-image: url("../image/icon_program_plan_3.svg");
+}
+
+.program-plan__item--terms::before {
+  background-image: url("../image/icon_program_plan_4.svg");
+}
+
+.program-plan__image {
+  margin-right: 20px;
+}
+
+.program-plan__content {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  margin-left: 80px;
+
+  @media (min-width: $table-width) {
+    margin-left: 0;
+    margin-top: 113px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

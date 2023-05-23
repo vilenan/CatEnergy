@@ -1,0 +1,122 @@
+.navigation {
+  width: auto;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.navigation__toggle {
+  position: absolute;
+
+  @media (min-width: $table-width) {
+    display: none;
+  }
+}
+
+.navigation__toggle--no-js {
+  display: none;
+}
+
+.navigation--closed .navigation__toggle {
+  width: 24px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  background-image: url("../image/btn_ham.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation--opened .navigation__toggle {
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  background-image: url("../image/icon_close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.navigation__list {
+  @include reset;
+
+  @media (min-width: $table-width) {
+    display: flex;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+}
+
+.navigation__item {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  text-align: center;
+  border-top: 1px solid $grey--light;
+
+  &:last-child {
+    border-bottom: 1px solid $grey--light;
+  }
+
+  @media (min-width: $table-width) {
+    border: none;
+    margin-right: 34px;
+
+    &:last-child {
+      border-bottom: none;
+      margin: 0;
+    }
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $table-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--current {
+    @media (min-width: $table-width) {
+      border-bottom: 2px solid $accent;
+    }
+  }
+
+  &--index--current {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.navigation__link[href]:hover {
+  opacity: 0.6;
+}
+
+.navigation__link[href]:active {
+  opacity: 0.3;
+}

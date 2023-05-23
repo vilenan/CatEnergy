@@ -1,0 +1,328 @@
+.client-story {
+  background-color: $grey--lighten;
+  padding-bottom: 35px;
+
+  @media (min-width: $table-width) {
+    // background-image: linear-gradient($white 58%, $grey--lighten 42%);
+    background-color: $white;
+    border-top: 1px solid $grey--light;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    // min-height: 656px;
+    // background-image: linear-gradient($white 30%, $grey--lighten 30% 70%);
+    border: none;
+  }
+}
+
+.client-story__wrapper {
+  width: auto; // 280px
+  padding-top: 27px;
+
+  @media (min-width: $table-width) {
+    padding: 0;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.client-story__images-and-bar-wrapper {
+  @media (min-width: $table-width) {
+    background-color: $grey--lighten;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.client-story__images-wrapper {
+  @media (min-width: $table-width) {
+    height: 520px;
+    background-image: linear-gradient($white 37%, $grey--lighten 37%);
+  }
+}
+
+.client-story__slider {
+  position: relative;
+
+  @media (min-width: $table-width) {
+    width: 677px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+    margin-right: -30px;
+  }
+}
+
+.client-story__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  color: $black;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $table-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.client-story__content {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 150px;
+    margin-bottom: 55px;
+  }
+}
+
+.client-story__content-wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 58px;
+    position: absolute;
+    width: 610px;
+  }
+}
+
+.client-story__content-points {
+  padding-bottom: 40px;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.client-story__results {
+  margin-bottom: 34px;
+
+  @media (min-width: $table-width) {
+    width: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    margin-bottom: 60px;
+  }
+}
+
+.client-story__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 52%;
+    padding-top: 0;
+  }
+}
+
+.client-story__controls {
+  width: 212px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    width: 570px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 35px;
+  }
+}
+
+.client-story__bar {
+  display: none;
+
+  @media (min-width: $table-width) {
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $grey;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+.client-story__switcher {
+  width: 84px;
+  background: $white;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 3px 6px;
+
+  @media (min-width: $table-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    left: 48%;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active,
+    &:focus {
+      border: 1px solid $accent;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 47%;
+  }
+}
+
+.client-story__pointer {
+  background-color: $accent;
+  border-radius: 6px;
+  width: 35px;
+  height: 6px;
+
+  @media (min-width: $table-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+.client-story__img {
+  margin: 0 auto 20px;
+  width: 320px;
+
+  @media (min-width: $table-width) {
+    position: absolute;
+    width: 677px;
+    height: 520px;
+  }
+}
+
+.client-story__img img {
+  margin-left: -20px;
+
+  @media (min-width: $table-width) {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+.client-story__img--before img {
+  @media (min-width: $table-width) {
+    width: 677px;
+  }
+}
+
+.client-story__img--after img {
+  @media (min-width: $table-width) {
+    width: 677px;
+  }
+}
+
+.client-story__img--closed {
+  display: none;
+
+  @media (min-width: $table-width) {
+    display: block;
+  }
+}
+
+.client-story__img--before {
+  @media (min-width: $table-width) {
+    width: 50%;
+    overflow: hidden;
+    background-image: linear-gradient(#ffffff 37%, #f2f2f2 37%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 53%;
+  }
+}
+
+.client-story__img--after {
+  @media (min-width: $table-width) {
+    // width: 50%;
+    overflow: hidden;
+    // right: -15%;
+  }
+}
+
+.client-story__button {
+  background-color: transparent;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    border-bottom: 1px dotted $grey;
+
+    &:hover {
+      border-bottom: 1px solid $grey--darken;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: 1px solid $grey--lighten;
+    }
+  }
+}

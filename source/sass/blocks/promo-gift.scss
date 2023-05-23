@@ -1,0 +1,75 @@
+.promo-gift {
+  margin-top: 38px;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
+.promo-gift__wrapper {
+  background-image: url("../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  padding: 58px 50px 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-mobile@2x.jpg");
+  }
+
+  @media (min-width: $table-width) {
+    flex-direction: row;
+    padding: 58px 120px 60px 78px;
+    background-image: url("../image/promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 58px 41px 42px;
+    background-image: url("../image/promo-desktop.jpg");
+    background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/promo-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo-gift__image {
+  @media (min-width: $table-width) {
+    width: 80px;
+  }
+}
+
+.promo-gift__text {
+  color: $white;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-top: 45px;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    width: 170px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

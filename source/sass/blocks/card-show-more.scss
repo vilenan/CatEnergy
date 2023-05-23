@@ -1,0 +1,93 @@
+.card-show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 25px;
+  border-top: 1px solid $grey--light;
+  border-bottom: 1px solid $grey--light;
+
+  @media (min-width: $table-width) {
+    padding: 52px 36px 40px;
+    border: 1px solid $grey--light;
+    margin-top: 70px;
+    justify-content: space-between;
+  }
+}
+
+.card-show-more__picture {
+  @media (min-width: $table-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card-show-more__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey--darken;
+  background-color: $grey--lighten;
+  width: 100%;
+
+  &:hover {
+    background-color: $grey--light;
+  }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.card-show-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 8px;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 0;
+  }
+}
+
+.card-show-more__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey--darken;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.card-show-more__info-container {
+  @media (min-width: $table-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

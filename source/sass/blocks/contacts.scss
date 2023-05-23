@@ -1,0 +1,38 @@
+.contacts__content-wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.contacts__content-wrapper--index {
+  background-color: $white;
+}
+
+.contacts__content {
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: $table-width) {
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 63px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 450px;
+    background-color: $white;
+  }
+}
+
+.contacts__map {
+  height: 362px;
+
+  @media (min-width: $table-width) {
+    height: 400px;
+  }
+}
