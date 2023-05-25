@@ -1,15 +1,21 @@
 .page-header {
-  background-color: $white;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   @media (min-width: $table-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
+
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    padding-top: 31px;
+    padding-top: 55px;
   }
 }
+

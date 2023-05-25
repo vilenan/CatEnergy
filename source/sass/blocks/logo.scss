@@ -1,12 +1,5 @@
 .logo {
-  padding-top: 12px;
-  padding-bottom: 12px;
   display: block;
-
-  @media (min-width: $table-width) {
-    padding-top: 23px;
-    padding-bottom: 23px;
-  }
 }
 
 .logo[href]:hover {

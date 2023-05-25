@@ -161,6 +161,7 @@
     height: 12px;
     margin-left: 15px;
     background-image: url("../image/icon-arrow-small.svg");
+    transition: 0.3s;
   }
 
   &:hover::after {
