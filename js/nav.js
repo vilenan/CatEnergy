@@ -19,7 +19,9 @@ burger.addEventListener('click', function () {
 });
 
 overlay.addEventListener('click', () => {
+  burger.classList.remove('burger--active');
   navigation.classList.remove('navigation--visible');
+  body.classList.remove('no-scroll');
 });
 
 menuItems.forEach(el => {
