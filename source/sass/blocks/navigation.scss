@@ -8,10 +8,11 @@
   @media (min-width: $table-width) {
     position: static;
     width: auto;
+    height: auto;
   }
 
   &--visible {
-    height: 100vh;
+    //height: 100vh;
   }
 }
 
@@ -57,10 +58,10 @@
 
 .navigation__list {
   @include reset;
+  display: none;
   position: absolute;
   top: 0;
   width: 100%;
-  display: flex;
   flex-direction: column;
   background-color: $white;
   transform: translateX(100%);
@@ -68,6 +69,7 @@
   z-index: 1000;
 
   @media (min-width: $table-width) {
+    display: flex;
     position: static;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,7 +78,8 @@
   }
 }
 
-.navigation--visible .navigation__list {
+.navigation--visible > .navigation__list {
+  display: flex;
   transform: none;
 }
 
